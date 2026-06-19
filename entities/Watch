@@ -1,0 +1,104 @@
+{
+  "name": "Watch",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Watch model name"
+    },
+    "series": {
+      "type": "string",
+      "enum": [
+        "Void",
+        "Horizon",
+        "Apex",
+        "Eclipse",
+        "Genesis"
+      ],
+      "description": "Watch series/collection"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in USD"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Primary product image URL"
+    },
+    "gallery_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional gallery images"
+    },
+    "case_material": {
+      "type": "string",
+      "enum": [
+        "Titanium",
+        "Stainless Steel",
+        "Ceramic",
+        "Carbon Fiber",
+        "Rose Gold"
+      ],
+      "description": "Case material"
+    },
+    "movement": {
+      "type": "string",
+      "enum": [
+        "Automatic",
+        "Manual",
+        "Quartz",
+        "Tourbillon"
+      ],
+      "description": "Movement type"
+    },
+    "case_diameter": {
+      "type": "string",
+      "description": "Case diameter e.g. 42mm"
+    },
+    "water_resistance": {
+      "type": "string",
+      "description": "Water resistance rating"
+    },
+    "power_reserve": {
+      "type": "string",
+      "description": "Power reserve duration"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full product description"
+    },
+    "short_description": {
+      "type": "string",
+      "description": "One-line tagline"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show on homepage"
+    },
+    "is_new": {
+      "type": "boolean",
+      "default": false,
+      "description": "New arrival flag"
+    },
+    "stock": {
+      "type": "number",
+      "default": 10,
+      "description": "Available stock"
+    },
+    "reference_number": {
+      "type": "string",
+      "description": "Reference/model number"
+    }
+  },
+  "required": [
+    "name",
+    "series",
+    "price",
+    "image_url",
+    "case_material",
+    "movement"
+  ]
+}

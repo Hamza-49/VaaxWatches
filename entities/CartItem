@@ -1,0 +1,19 @@
+{
+  "name": "CartItem",
+  "type": "object",
+  "properties": {
+    "watch_id": {
+      "type": "string",
+      "description": "Reference to Watch entity"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1,
+      "description": "Quantity in cart"
+    }
+  },
+  "required": [
+    "watch_id",
+    "quantity"
+  ]
+}

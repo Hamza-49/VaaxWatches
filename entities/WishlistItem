@@ -1,0 +1,13 @@
+{
+  "name": "WishlistItem",
+  "type": "object",
+  "properties": {
+    "watch_id": {
+      "type": "string",
+      "description": "Reference to Watch entity"
+    }
+  },
+  "required": [
+    "watch_id"
+  ]
+}

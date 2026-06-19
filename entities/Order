@@ -1,0 +1,27 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "watch_id": {
+            "type": "string"
+          },
+          "watch_name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "quantity": {
+            "type": "number"
+          },
+          "image_url": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Order line items"
